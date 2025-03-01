@@ -1,0 +1,21 @@
+{
+    "name": "youdum",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha tests/unit/*.test.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "directories": {
+        "doc": "docs",
+        "test": "tests"
+    },
+    "keywords": [],
+    "description": "",
+    "devDependencies": {
+        "chai": "^5.2.0",
+        "mocha": "^11.1.0",
+        "puppeteer": "^24.3.0"
+    }
+}
