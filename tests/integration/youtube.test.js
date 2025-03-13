@@ -14,7 +14,7 @@ const assert = require('assert');
   });
 
   const page = await browser.newPage();
-  await page.goto('https://www.youtube.com/watch?v=dQw4w9WgXcQ', { waitUntil: 'networkidle2' });
+  await page.goto('https://www.youtube.com/watch?v=gxeQFavk1P8', { waitUntil: 'networkidle2' });
 
   const logs = [];
   page.on('console', msg => {
@@ -22,7 +22,7 @@ const assert = require('assert');
     logs.push(msg.text());
   });
 
-  await new Promise(resolve => setTimeout(resolve, 40000)); 
+  await new Promise(resolve => setTimeout(resolve, 50000)); 
 
 
   const foundLog = logs.some(log => log.includes('Lejátszási minőség beállítva:'));
